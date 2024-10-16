@@ -1,0 +1,51 @@
+@keyframes move {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(40px, 0);
+    }
+}
+
+.animated {
+    animation: move 1.5s infinite alternate;
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    10%{
+        opacity: 0.8;
+    }
+    20%{
+        opacity: 0.6;
+    }
+    30%{
+        opacity: 0.4;
+    }
+    40%{
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0;
+    }
+    60%{
+        opacity: 0.2;
+    }
+    70%{
+        opacity: 0.4;
+    }
+    80%{
+        opacity: 0.6;
+
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.ojo {
+    animation: disappear 2s infinite alternate;
+}
